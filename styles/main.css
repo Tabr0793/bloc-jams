@@ -7,6 +7,10 @@
      margin: 0 auto;
      max-width: 64rem;
  }
+ .container.narrow {
+     max-width: 56rem;
+ }
+ 
  /* Medium screens (640px) */
  @media (min-width: 640px) {
      html { font-size: 112%; }
@@ -27,7 +31,7 @@
      .column.half { width: 50%; }
      .column.third { width: 33.3%; }
      .column.fourth { width: 25%; }
-     .column.flow-opposite { float: right; }  
+     .column.flow-opposite { float: right; }
  }
 html {
      height: 100%; /* makes sure our HTML takes up 100% of the browser window */
