@@ -193,3 +193,21 @@ var previousSong = function() {
 
 var $previousButton = $('.main-controls .previous');
 var $nextButton = $('.main-controls .next');
+
+});
+
+var playSelector = $('.main-controls .play-pause')
+  $(document).ready("click", function() {
+  togglePlayFromPlayerBar();
+}
+  var togglePlayFromPlayerBar = function() {
+    var music = $('music')[0];
+    $('button').click(function() {
+        if( music.paused ) {
+            music.play();
+        }
+        else {
+            music.pause();
+      }
+    })
+  });
